@@ -1,0 +1,125 @@
+/* Definição de variáveis de cor para o modo claro */
+:root {
+  --text-color: #2c003e; /* Cor do texto: roxo escuro */
+  --background-color: #fdf5ff; /* Cor de fundo: lavanda clara */
+}
+
+/* Altera as cores automaticamente para o modo escuro, se o usuário usar esse modo no sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fceaff; /* Texto em roxo claro no modo escuro */
+    --background-color: #2a0032; /* Fundo roxo escuro no modo escuro */
+  }
+}
+
+/* Reset de estilos básicos para garantir uniformidade entre navegadores */
+* {
+  margin: 0; /* Remove margem padrão dos elementos */
+  padding: 0; /* Remove o preenchimento interno padrão */
+  box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho total do elemento */
+}
+
+/* Estilização geral do corpo da página */
+body {
+  font-family: "Merriweather", serif; /* Define a fonte serifada */
+  display: flex; /* Usa o modelo flexível para layout */
+  flex-direction: column; /* Organiza os elementos filhos em coluna */
+  align-items: center; /* Centraliza horizontalmente os itens */
+  min-height: 100vh; /* Garante altura mínima da tela toda */
+  font-size: 0.8em; /* Define um tamanho de fonte um pouco menor */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  color: var(--text-color); /* Usa a variável de cor do texto */
+  background-color: var(
+    --background-color
+  ); /* Usa a variável de cor do fundo */
+}
+
+/* Define a largura máxima da área principal */
+main {
+  width: 90%; /* Ocupa 90% da largura da tela */
+  max-width: 800px; /* Limita a largura máxima a 800px */
+}
+
+/* Caixa que envolve o conteúdo da postagem */
+.post-container {
+  background: #fff0ff; /* Fundo roxo bem clarinho */
+  border-radius: 12px; /* Cantos arredondados */
+  padding: 16px; /* Espaçamento interno */
+  box-shadow: 0px 10px 5px rgba(128, 0, 128, 0.1); /* Sombra suave roxa */
+  max-width: 600px; /* Largura máxima da postagem */
+  margin: 24px; /* Espaço externo entre as postagens */
+}
+
+/* Imagem do perfil (avatar) */
+.avatar {
+  width: 36px; /* Largura fixa */
+  height: 36px; /* Altura fixa */
+  border-radius: 50%; /* Deixa a imagem circular */
+  margin-right: 10px; /* Espaço à direita do avatar */
+}
+
+/* Nome do subreddit ou categoria da postagem */
+.subreddit {
+  font-weight: bold; /* Texto em negrito */
+  color: #4b006e; /* Cor roxa escura */
+}
+
+/* Exibe o tempo que a postagem foi criada */
+.time-created {
+  color: #aa7cb3; /* Cor roxa mais clara */
+  font-size: 0.9em; /* Tamanho da fonte menor */
+  margin-left: 5px; /* Espaço à esquerda */
+}
+
+/* Título da postagem */
+.post-title {
+  font-weight: bold; /* Deixa o título em negrito */
+  font-size: 1.2em; /* Aumenta um pouco o tamanho da fonte */
+  margin-bottom: 8px; /* Espaço abaixo do título */
+  color: #4a005f; /* Cor roxa intensa */
+}
+
+/* Texto do conteúdo da postagem */
+.post-body {
+  font-size: 1em; /* Tamanho padrão da fonte */
+  color: #5a006e; /* Cor roxa neutra */
+}
+
+/* Rodapé da postagem, com reações e botões */
+.footer-post {
+  display: flex; /* Usa layout flexível */
+  flex-direction: row-reverse; /* Organiza os itens da direita para a esquerda */
+  justify-content: space-between; /* Espaço entre os elementos */
+  align-items: center; /* Alinha verticalmente os itens */
+  margin-top: 16px; /* Espaço acima do rodapé */
+  padding-top: 10px; /* Espaço interno no topo */
+  border-top: 1px solid #e9d5ec; /* Linha separadora em lilás claro */
+}
+
+/* Estilo dos botões (curtir, comentar, etc.) */
+.button {
+  display: flex; /* Layout flexível */
+  align-items: center; /* Alinha verticalmente os itens */
+  background: linear-gradient(
+    to right,
+    #6a0dad,
+    #9b30ff
+  ); /* Gradiente em tons de roxo */
+  color: #fff; /* Texto branco */
+  font-size: 0.9em; /* Tamanho menor da fonte */
+  cursor: pointer; /* Cursor tipo "mãozinha" */
+  border: none; /* Remove a borda padrão */
+  border-radius: 50px; /* Deixa os cantos arredondados */
+  padding: 6px 12px; /* Espaçamento interno */
+}
+
+/* Ícone dentro do botão de reação */
+.reaction i {
+  margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+/* Rodapé geral da página */
+.footer-page {
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os itens */
+}
