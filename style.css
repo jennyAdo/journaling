@@ -1,12 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #6c5ce7;
+  background-color: #e75ca8;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -27,12 +27,24 @@ header {
 }
 
 .post h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #2d3436;
 }
 
-footer.rodape {
+.post footer {
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem; /* menos espaço interno */
   background-color: #dfe6e9;
-  margin-top: 2rem;
+  margin-top: 1rem; /* reduz a margem superior */
+  max-width: 200px; /* limita a largura máxima da caixa */
+  margin-left: auto; /* centraliza horizontalmente */
+  margin-right: auto;
+  border-radius: 6px; /* cantos arredondados */
+}
+.rodape {
+  background-color: #e75ca8;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
 }

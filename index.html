@@ -1,30 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Declaração do tipo de documento: HTML5 -->
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <!-- Define a codificação de caracteres (acentos, ç etc.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Torna o site responsivo em dispositivos móveis -->
+
+    <!-- Importa a fonte Montserrat do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link para o arquivo CSS externo (estilos da página) -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Meu diário</title>
+    <!-- Título da aba do navegador -->
+
+    <style>
+      /* Estilo direto no HTML (só para garantir que a fonte funcione) */
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
-  <link rel="stylesheet" href="style.css" />
+
   <body>
+    <!-- Cabeçalho da página -->
     <header>
       <h1>Meu diário</h1>
+      <!-- Título principal da página -->
     </header>
+
+    <!-- Seção que agrupa os posts do diário -->
     <section class="posts">
-     <article class="post">
+      <!-- A classe "posts" pode ser usada no CSS para aplicar estilos específicos -->
+
+      <!-- Cada postagem do diário é um artigo separado -->
+      <article class="post">
+        <!-- A tag <article> representa um conteúdo independente, como uma postagem ou notícia -->
+
         <h2>Hoje foi um bom dia</h2>
+        <!-- Título da postagem -->
+
         <p>Senti que avancei no HTML! Cada tag faz mais sentido.</p>
+        <!-- Parágrafo de texto da postagem -->
+
         <footer>
-          <footer>
-          <small>02/07/2025</small>
+          <!-- Rodapé do artigo: normalmente usado para data, autor, fonte, etc. -->
+          <small> 📅01/07/2025</small>
+          <!-- Texto menor com a data -->
         </footer>
+      </article>
+
+      <!-- Segunda postagem -->
+      <article class="post">
         <h2>Acordei motivada a fazer mais</h2>
         <p>Hoje acordei com vontade de dominar tudo em HTML e CSS.</p>
         <footer>
-          <small>03/07/2025</small>
+          <small>📅02/07/2025</small>
         </footer>
-        <h2></h2>
+      </article>
+
+      <!--Terceira Postagem -->
+      <article class="post">
+        <h2>Tudo bem estar inseguro</h2>
+        <p>
+          Ainda me sinto insegura de usar algumas funcionalidades, mas isso me
+          motiva a continuar.
+        </p>
+        <footer>
+          <small>📅03/07/2025</small>
+        </footer>
+      </article>
+      <article class="post">
+        <h2>Sextou</h2>
+        <p>Hoje acordei e aprendi mais um pouco sobre Layout CSS.</p>
+        <footer>
+          <small>📅04/07/2025</small>
+        </footer>
       </article>
     </section>
+    <footer class="rodape">
+      <p>©Copyright 2025 by Jenny.</p>
+    </footer>
   </body>
 </html>
